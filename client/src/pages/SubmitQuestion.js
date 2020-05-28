@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Root = () => {
-
+const SubmitQuestion = () => {
     return (
         <div>
             <h1>
-                Welcome to the Route path!
+                Submit a question to the API
             </h1>
         </div>
     )
+}
 
-};
-
-export default Root;
+export default SubmitQuestion;

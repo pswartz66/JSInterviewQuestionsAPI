@@ -1,12 +1,30 @@
 import React from 'react';
-import Root from './pages/Root';
 import './App.css';
+import LeftNav from './components/LeftNav';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Root from './pages/Root';
+import Documentation from './pages/Documentation';
+import Endpoints from './pages/Endpoints';
+import About from './pages/About';
+import SubmitQuestion from './pages/SubmitQuestion';
 
 function App() {
   return (
     <div className="App">
-      
-      <Root />
+      <Router>
+        <Switch>
+          <div class="content-container">
+            <LeftNav />
+            <Route exact path="/" component={Root} />
+            <Route exact path="/documentation" component={Documentation} />
+            <Route exact path="/endpoints" component={Endpoints} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/submitquestion" component={SubmitQuestion} />
+            
+          </div>
+        </Switch>
+        
+      </Router>
 
     </div>
   );

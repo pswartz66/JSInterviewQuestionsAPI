@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Root = () => {
-
+const Documentation = () => {
     return (
         <div>
             <h1>
-                Welcome to the Route path!
+                Welcome to the Docs!
             </h1>
         </div>
     )
+}
 
-};
-
-export default Root;
+export default Documentation;

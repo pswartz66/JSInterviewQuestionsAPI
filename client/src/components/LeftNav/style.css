@@ -1,0 +1,22 @@
+
+.sidebar-container {
+    display: 'flex';
+    width: 100%;
+    align-items: 'flex-start';
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background-color: rgb(219, 219, 219);
+}
+.sidebar-list {
+    text-align: left;
+}
+.sidebar-listitem {
+    padding: 10px;
+}
+.sidebar-listitem > a {
+    font-size: 18px;
+    text-decoration: none!important;
+}

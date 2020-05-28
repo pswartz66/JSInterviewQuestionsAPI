@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Root = () => {
-
+const About = () => {
     return (
         <div>
             <h1>
-                Welcome to the Route path!
+                About page
             </h1>
         </div>
     )
+}
 
-};
-
-export default Root;
+export default About;
