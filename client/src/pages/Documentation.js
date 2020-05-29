@@ -1,11 +1,11 @@
 import React from 'react';
+import './Documentation.css';
+import Header from '../components/Header';
 
 const Documentation = () => {
     return (
-        <div>
-            <h1>
-                Welcome to the Docs!
-            </h1>
+        <div className="documentationContainer">
+            <Header name="Documentation"/>
         </div>
     )
 }

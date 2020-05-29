@@ -1,9 +1,8 @@
 .App {
   text-align: center;
 }
-.content-container {
+.appContainer {
   display: flex;
-  align-content: flex-end;
 }
 
 .App-logo {

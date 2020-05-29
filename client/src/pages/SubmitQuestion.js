@@ -1,11 +1,11 @@
 import React from 'react';
+import './SubmitQuestion.css';
+import Header from '../components/Header';
 
 const SubmitQuestion = () => {
     return (
-        <div>
-            <h1>
-                Submit a question to the API
-            </h1>
+        <div className="submitQuestionContainer">
+            <Header name="Submit a question to the API"/>
         </div>
     )
 }

@@ -13,19 +13,16 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <div class="content-container">
+          <div className="appContainer">
             <LeftNav />
             <Route exact path="/" component={Root} />
             <Route exact path="/documentation" component={Documentation} />
             <Route exact path="/endpoints" component={Endpoints} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/submitquestion" component={SubmitQuestion} />
-            
+            <Route exact path="/submit a question" component={SubmitQuestion} />
           </div>
         </Switch>
-        
       </Router>
-
     </div>
   );
 }

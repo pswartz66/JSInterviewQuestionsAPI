@@ -1,8 +1,7 @@
 
-.sidebar-container {
-    display: 'flex';
-    width: 100%;
-    align-items: 'flex-start';
+.sidebarContainer {
+    height: 100%;
+    margin: 0;
 }
 #sidebar {
     min-width: 250px;
@@ -19,4 +18,10 @@
 .sidebar-listitem > a {
     font-size: 18px;
     text-decoration: none!important;
+}
+#leftHeader {
+    margin-top: 0;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
 }

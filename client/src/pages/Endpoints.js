@@ -1,9 +1,11 @@
 import React from 'react';
+import './Endpoints.css';
+import Header from '../components/Header';
 
 const Endpoints = () => {
     return (
-        <div>
-            <h1>Endpoints page</h1>
+        <div className="endpointsContainer">
+            <Header name="Endpoints"/>
         </div>
     )
 }

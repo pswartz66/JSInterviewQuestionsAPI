@@ -2,26 +2,36 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
-
 const LeftNav = () => {
 
-    return (
-        <div class="sidebar-container">
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>JS Interview Questions API</h3>
-                </div>
+    const pageNames = [
+        "Documentation",
+        "Endpoints",
+        "About",
+        "Submit a question"
+    ]
+    
+    let links = pageNames.map(function(name, index){
+        return (
+            <ul key={index} className="sidebar-listitem">
                 
-                <ul class="sidebar-list">
-                    <ul class="sidebar-listitem"><Link to="/documentation">Documentation</Link></ul>
-                    <ul class="sidebar-listitem"><Link to="/endpoints">Endpoints</Link></ul>
-                    <ul class="sidebar-listitem"><Link to="/about">About</Link></ul>
-                    <ul class="sidebar-listitem"><Link to="/submitquestion">Submit a question</Link></ul>
+                <Link to={`/${name.trim()}`}>{name}</Link>
+            </ul>
+        )
+    })
+
+    return (
+        <div className="sidebarContainer">
+            <nav id="sidebar">
+                <div className="sidebar-header">
+                    <div id="leftHeader">JS Interview Questions API</div>
+                </div>
+                <ul className="sidebar-list">
+                    {links}
                 </ul>
             </nav>
         </div>
     )
-
 }
 
 export default LeftNav;
