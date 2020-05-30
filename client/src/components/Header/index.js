@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 
 const Header = (props) => {
-
     console.log(props);
     return (
         <div className="headerContainer">

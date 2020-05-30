@@ -1,13 +1,14 @@
 
 .sidebarContainer {
     height: 100%;
-    margin: 0;
+    /* margin: 10px; */
 }
 #sidebar {
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 12px; */
 }
 .sidebar-list {
     text-align: left;
@@ -15,13 +16,31 @@
 .sidebar-listitem {
     padding: 10px;
 }
-.sidebar-listitem > a {
-    font-size: 18px;
-    text-decoration: none!important;
-}
+
 #leftHeader {
     margin-top: 0;
     padding: 10px;
     font-size: 30px;
     font-weight: 600;
+}
+a.underbar-link {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a.underbar-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.underbar-link:hover:before {
+    visibility: visible;
+    width: 100%;
 }

@@ -14,8 +14,7 @@ const LeftNav = () => {
     let links = pageNames.map(function(name, index){
         return (
             <ul key={index} className="sidebar-listitem">
-                
-                <Link to={`/${name.trim()}`}>{name}</Link>
+                <Link className="underbar-link" to={`/${name.trim()}`}>{name}</Link>
             </ul>
         )
     })
