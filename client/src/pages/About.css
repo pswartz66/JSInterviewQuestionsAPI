@@ -1,5 +1,15 @@
 .aboutContainer {
-    display: flex;
     height: 100vh;
     width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+#aboutBody {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.aboutParagraphs {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }

@@ -1,9 +1,6 @@
 
 .headerContainer {
-    display: flex;
-    height: 100vh;
     width: 100%;
-    /* margin: 10px; */
 }
 .navBar {
     display: flex;
@@ -11,9 +8,9 @@
     align-items: center;
     height: 100px;
     width: 100%;
-    background-color: rgb(82, 189, 231);
+    background-color: rgb(153, 153, 153);
     /* border-radius: 12px; */
 }
 .pageHeaders {
-    font-size: 40px;
+    font-size: 32px;
 }

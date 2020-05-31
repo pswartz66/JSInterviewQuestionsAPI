@@ -1,28 +1,45 @@
 
 .sidebarContainer {
+    /* display: flex; */
     height: 100%;
     /* margin: 10px; */
 }
 #sidebar {
+    /* display: flex; */
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
-    /* border-radius: 12px; */
+    background-color: rgb(184, 184, 184);
+}
+.leftArrow {
+    padding: 10px 10px 0 0;
+    text-align: right;
+    
+}
+.leftArrow > svg {
+    background-color: blue;
+    border-radius: 4px;
+    padding: 4px;
+
 }
 .sidebar-list {
     text-align: left;
+
 }
 .sidebar-listitem {
-    padding: 10px;
+    padding: 12px;
 }
-
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+}
 #leftHeader {
     margin-top: 0;
-    padding: 10px;
-    font-size: 30px;
+    padding: 4px;
+    font-size: 26px;
     font-weight: 600;
 }
+/* code for underlining text on hover */
 a.underbar-link {
     position: relative;
     font-size: 18px;
@@ -36,11 +53,25 @@ a.underbar-link:before {
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(18, 85, 102);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
 a.underbar-link:hover:before {
     visibility: visible;
     width: 100%;
+}
+a.underbar-link:hover {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .sidebarContainer {
+        visibility: collapse;
+    }
+    #sidebar {
+        visibility: collapse;
+    }
+
 }

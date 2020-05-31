@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import LeftNav from './components/LeftNav';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -8,7 +8,8 @@ import Endpoints from './pages/Endpoints';
 import About from './pages/About';
 import SubmitQuestion from './pages/SubmitQuestion';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
       <Router>
