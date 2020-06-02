@@ -1,13 +1,18 @@
 import React from 'react';
 import './About.css';
 import Header from '../components/Header';
+import LeftNav from '../components/LeftNav';
+
 
 const About = () => {
     return (
+        
         <div className="aboutContainer">
+            <LeftNav />
             
-            <Header name="About" />
             <div id="aboutBody">
+                <Header name="About" />
+
                 <h3>What?</h3>  
                 <p className="aboutParagraphs">
                     JS Interview Questions is an open source API

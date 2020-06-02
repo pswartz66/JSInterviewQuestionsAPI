@@ -1,11 +1,11 @@
 .App {
   text-align: center;
 }
-.appContainer {
-  display: flex;
+/* .appContainer { */
+  /* display: flex; */
   /* background-color: rgb(125, 139, 161); */
   /* overflow: auto; */
-}
+/* } */
 
 .App-logo {
   height: 40vmin;

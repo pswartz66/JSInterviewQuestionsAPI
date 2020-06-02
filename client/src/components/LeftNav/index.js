@@ -2,10 +2,9 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
+import Header from '../Header';
 
 const LeftNav = () => {
-
-
 
     const pageNames = [
         "Documentation",
@@ -23,7 +22,8 @@ const LeftNav = () => {
     })
 
     return (
-        <div className="sidebarContainer">
+        
+
             <nav id="sidebar">
                 <div className="leftArrow">
                     <FaAngleDoubleLeft size={24} />
@@ -40,7 +40,6 @@ const LeftNav = () => {
                     {links}
                 </ul>
             </nav>
-        </div>
     )
 }
 

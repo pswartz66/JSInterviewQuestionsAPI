@@ -1,15 +1,17 @@
 
 .sidebarContainer {
-    /* display: flex; */
-    height: 100%;
+    display: flex;
+    height: 75%;
     /* margin: 10px; */
 }
 #sidebar {
     /* display: flex; */
-    min-width: 250px;
-    max-width: 250px;
+    /* position: relative; */
+    min-width: 230px;
+    max-width: 230px;
     min-height: 100vh;
     background-color: rgb(184, 184, 184);
+    /* z-index: 1; */
 }
 .leftArrow {
     padding: 10px 10px 0 0;
@@ -67,11 +69,11 @@ a.underbar-link:hover {
 
 @media only screen and (max-width: 800px) {
 
-    .sidebarContainer {
-        visibility: collapse;
-    }
+    /* .sidebarContainer {
+        visibility: hidden;
+    } */
     #sidebar {
-        visibility: collapse;
+        visibility: hidden;
     }
 
 }

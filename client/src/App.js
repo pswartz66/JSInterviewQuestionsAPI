@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import LeftNav from './components/LeftNav';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Root from './pages/Root';
 import Documentation from './pages/Documentation';
@@ -15,7 +14,6 @@ const App = () => {
       <Router>
         <Switch>
           <div className="appContainer">
-            <LeftNav />
             <Route exact path="/" component={Root} />
             <Route exact path="/documentation" component={Documentation} />
             <Route exact path="/endpoints" component={Endpoints} />
