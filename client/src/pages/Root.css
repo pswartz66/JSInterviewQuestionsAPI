@@ -1,0 +1,45 @@
+.leftNavArrow {
+    padding: 10px 10px 0 0;
+    text-align: left;
+}
+.leftNavArrow > svg {
+    background-color: blue;
+    border-radius: 4px;
+    padding: 4px;
+}
+.leftNavArrow:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.sideNav {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 100vh;
+    background-color: rgb(184, 184, 184);
+    visibility: hidden;
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+}
+.sideNav-list {
+    text-align: left;
+}
+.sideNav-listitem {
+    padding: 12px;
+}
+.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.25s ease;
+    transform: translateX(0);
+}
+.sideNav-header {
+    display: flex;
+    justify-content: flex-end;
+}
+#leftNavHeader {
+    margin-top: 0;
+    padding: 4px;
+    font-size: 26px;
+    font-weight: 600;
+}
+

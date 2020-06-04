@@ -23,7 +23,6 @@ const LeftNav = () => {
 
     return (
         
-
             <nav id="sidebar">
                 <div className="leftArrow">
                     <FaAngleDoubleLeft size={24} />
