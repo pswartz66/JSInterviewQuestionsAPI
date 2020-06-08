@@ -31,8 +31,6 @@ class Root extends React.Component {
         console.log(this.state.status);
     }
 
-
-
     render() {
 
         const pageName = [

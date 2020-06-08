@@ -1,5 +1,5 @@
 .leftNavArrow {
-    padding: 10px 10px 0 0;
+    padding: 10px 10px 6px 10px;
     text-align: left;
 }
 .leftNavArrow > svg {
@@ -7,7 +7,7 @@
     border-radius: 4px;
     padding: 4px;
 }
-.leftNavArrow:hover {
+.leftNavArrow > svg:hover {
     opacity: 0.7;
     cursor: pointer;
 }
@@ -42,4 +42,28 @@
     font-size: 26px;
     font-weight: 600;
 }
-
+/* code for underlining text on hover */
+a.underbar-link {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a.underbar-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(18, 85, 102);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.underbar-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+a.underbar-link:hover {
+    font-weight: 600;
+}

@@ -41,31 +41,7 @@
     font-size: 26px;
     font-weight: 600;
 }
-/* code for underlining text on hover */
-a.underbar-link {
-    position: relative;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-a.underbar-link:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(18, 85, 102);
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-a.underbar-link:hover:before {
-    visibility: visible;
-    width: 100%;
-}
-a.underbar-link:hover {
-    font-weight: 600;
-}
+
 
 @media only screen and (max-width: 800px) {
 
