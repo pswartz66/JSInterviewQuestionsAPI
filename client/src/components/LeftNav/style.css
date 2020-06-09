@@ -1,55 +1,70 @@
-
-.sidebarContainer {
-    display: flex;
-    height: 75%;
-    /* margin: 10px; */
+.leftNavArrow {
+    padding: 10px 10px 6px 10px;
+    text-align: left;
 }
-#sidebar {
-    /* display: flex; */
-    /* position: relative; */
+.leftNavArrow > svg {
+    background-color: blue;
+    border-radius: 4px;
+    padding: 4px;
+}
+.leftNavArrow > svg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.sideNav {
     min-width: 230px;
     max-width: 230px;
     min-height: 100vh;
     background-color: rgb(184, 184, 184);
-    /* z-index: 1; */
+    visibility: hidden;
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+    z-index: 1;
 }
-.leftArrow {
-    padding: 10px 10px 0 0;
-    text-align: right;
-    
-}
-.leftArrow > svg {
-    background-color: blue;
-    border-radius: 4px;
-    padding: 4px;
-
-}
-.sidebar-list {
+.sideNav-list {
     text-align: left;
-
 }
-.sidebar-listitem {
+.sideNav-listitem {
     padding: 12px;
 }
-.sidebar-header {
+.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.25s ease;
+    transform: translateX(0);
+}
+.sideNav-header {
     display: flex;
     justify-content: flex-end;
 }
-#leftHeader {
+#leftNavHeader {
     margin-top: 0;
     padding: 4px;
     font-size: 26px;
     font-weight: 600;
 }
-
-
-@media only screen and (max-width: 800px) {
-
-    /* .sidebarContainer {
-        visibility: hidden;
-    } */
-    #sidebar {
-        visibility: hidden;
-    }
-
+/* code for underlining text on hover */
+a.underbar-link {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a.underbar-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(18, 85, 102);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.underbar-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+a.underbar-link:hover {
+    font-weight: 600;
 }

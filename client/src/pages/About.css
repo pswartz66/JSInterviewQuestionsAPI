@@ -1,10 +1,12 @@
 .aboutContainer {
-    display: flex;
-    height: 100vh;
+    /* display: flex; */
+    /* height: 100vh; */
     width: 100%;
     background-color: rgb(231, 231, 231);
 }
 #aboutBody {
+    /* display: flex; */
+    flex-direction: column;
     text-align: left;
     padding-top: 10px;
     padding-left: 40px;

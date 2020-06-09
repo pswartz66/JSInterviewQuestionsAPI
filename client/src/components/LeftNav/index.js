@@ -2,44 +2,69 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
-import Header from '../Header';
 
-const LeftNav = () => {
 
-    const pageNames = [
-        "Documentation",
-        "Endpoints",
-        "About",
-        "Submit a question"
-    ]
+class LeftNav extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            style: "sideNav",
+            status: "open"
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
 
-    let links = pageNames.map(function (name, index) {
-        return (
-            <ul key={index} className="sidebar-listitem">
-                <Link className="underbar-link" to={`/${name.trim()}`}>{name}</Link>
-            </ul>
-        )
-    })
+    handleClick = () => {
+        if (this.state.status === "open") {
+            this.setState({
+                status: "close",
+                style: "sideNav active"
+            });
+        } else {
+            this.setState({
+                status: "open",
+                style: "sideNav"
+            });
+        }
 
-    return (
-        
-            <nav id="sidebar">
-                <div className="leftArrow">
-                    <FaAngleDoubleLeft size={24} />
-                </div>
-                <div className="sidebar-header">
+        console.log(this.state.status);
+    }
 
-                    <div id="leftHeader">
+    render() {
 
-                        JS Interview Questions API
-                    </div>
+        const pageName = [
+            "Documentation",
+            "Endpoints",
+            "About",
+            "Submit a question"
+        ]
 
-                </div>
-                <ul className="sidebar-list">
-                    {links}
+        const links = pageName.map(function (name, index) {
+            return (
+                <ul key={index} className="sideNav-listitem">
+                    <Link className="underbar-link" to={`/${name.trim()}`}>{name}</Link>
                 </ul>
-            </nav>
-    )
-}
+            )
+        })
 
-export default LeftNav;
+        return (
+            <div>
+                <div className="leftNavArrow">
+                    <FaAngleDoubleLeft onClick={this.handleClick} size={24} />
+                </div>
+                <div className={this.state.style}>
+                    <div className="sideNav-header">
+                        <div id="leftNavHeader">
+                            JS Interview Questions API
+                        </div>
+                    </div>
+                    <ul className="sideNav-list">
+                        {links}
+                    </ul>
+                </div>
+            </div>
+        )
+    }
+};
+
+export default LeftNav;  

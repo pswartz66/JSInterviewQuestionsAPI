@@ -5,10 +5,11 @@ import LeftNav from '../components/LeftNav';
 
 
 const About = () => {
+
     return (
         
         <div className="aboutContainer">
-            <LeftNav />
+            {/* <LeftNav /> */}
             
             <div id="aboutBody">
                 <Header name="About" />
