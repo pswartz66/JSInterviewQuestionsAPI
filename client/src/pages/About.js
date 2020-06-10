@@ -9,7 +9,6 @@ const About = () => {
     return (
         
         <div className="aboutContainer">
-            {/* <LeftNav /> */}
             
             <div id="aboutBody">
                 <Header name="About" />
