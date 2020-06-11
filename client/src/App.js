@@ -1,29 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Root from './pages/Root';
-import Documentation from './pages/Documentation';
-import Endpoints from './pages/Endpoints';
-import About from './pages/About';
-import SubmitQuestion from './pages/SubmitQuestion';
+import Home from './components/Home';
+import Docs from './components/Docs';
+import Endpoints from './components/Endpoints';
+import About from './components/About';
+import Submit from './components/Submit';
+import Navbar from './components/Navigation/Navbar';
 
-const App = () => {
+class App extends Component {
+  state = {
+    sideDrawerOpen: false
+  }
 
-  return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <div className="appContainer">
-            <Route exact path="/" component={Root} />
-            <Route exact path="/documentation" component={Documentation} />
-            <Route exact path="/endpoints" component={Endpoints} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/submit a question" component={SubmitQuestion} />
+  drawerToggler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <div className="AppContainer">
+            <Navbar drawerClickHandler={this.drawerToggler} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/docs" component={Docs} />
+              <Route exact path="/endpoints" component={Endpoints} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/submit" component={Submit} />
+            </Switch>
           </div>
-        </Switch>
-      </Router>
-    </div>
-  );
+        </Router>
+      </div>
+    );
+  }
 }
-
 export default App;

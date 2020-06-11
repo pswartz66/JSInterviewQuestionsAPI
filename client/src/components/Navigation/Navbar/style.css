@@ -1,0 +1,32 @@
+.Navbar {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 60px;
+    background-color: rgb(159, 183, 218);
+    box-shadow: 2px 2px 5px rgb(80, 80, 80);
+}
+
+.Navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+.navTitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 6px;
+}
+img[alt='jslogo'] {
+    margin-left: 20px;
+    margin-right: 0;
+    height: 36px;
+    width: 34px;
+}
+
+@media (min-width: 769px) {
+    .navButton {
+      display: none;
+    }
+  }

@@ -1,0 +1,31 @@
+.NavLinks {
+    padding-left: 0;
+}
+
+/* code for underlining text on hover */
+a.underbarLink {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(50, 58, 80);
+    margin-left: 14px;
+    margin-right: 10px;
+}
+a.underbarLink:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(32, 76, 87);
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
+}
+a.underbarLink:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+/* a.underbarLink:hover {
+    font-weight: 500;
+} */
