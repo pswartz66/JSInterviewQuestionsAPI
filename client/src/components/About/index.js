@@ -3,8 +3,15 @@ import './style.css';
 
 const About = () => {
     return (
-        <div>
-            About page
+        <div className="aboutContainer">
+            <div className="aboutBody">
+                Follow the project on github!
+            
+            </div>
+            <a href="https://github.com/pswartz66/JSInterviewQuestionsAPI" className="githubLink">
+                Source Code     
+            </a>
+
         </div>
     )
 }
