@@ -1,11 +1,12 @@
 .App {
-  background-color: rgb(230, 216, 211);
-  height: 100vh;
+  background-color: rgb(241, 241, 241);
+  height: 100%;
   width: 100%;
 }
 .AppContainer {
+  height: 100%;
   /* margin-top: 20px; */
-  background-color: rgb(125, 139, 161);
-  overflow: auto;
+  /* background-color: rgb(125, 139, 161); */
+  /* overflow: auto; */
 }
 

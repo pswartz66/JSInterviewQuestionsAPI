@@ -5,7 +5,7 @@ const DrawerButton = (props) => {
 
 
     return (
-        <button className="drawerBtn">
+        <button className="drawerBtn" onClick={props.click}>
             <div className="btnLine"/>
             <div className="btnLine"/>
             <div className="btnLine"/>

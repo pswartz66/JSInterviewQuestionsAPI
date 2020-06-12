@@ -11,7 +11,7 @@ const Navbar = (props) => {
 
             <nav className="Navigation">
                 <div className="navButton">
-                    <DrawerButton click={props.drawerToggler} />
+                    <DrawerButton click={props.drawerClickHandler} />
                 </div>
                 
                 <img src={JSLogo} alt='jslogo' />

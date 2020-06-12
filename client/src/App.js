@@ -7,6 +7,8 @@ import Endpoints from './components/Endpoints';
 import About from './components/About';
 import Submit from './components/Submit';
 import Navbar from './components/Navigation/Navbar';
+import SidePane from './components/Navigation/SidePane';
+import Overlay from './components/Overlay';
 
 class App extends Component {
   state = {
@@ -16,7 +18,12 @@ class App extends Component {
   drawerToggler = () => {
     this.setState(prevState => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    })
+    });
+    console.log(this.state);
+  }
+
+  closePaneHandler = () => {
+    this.setState({ sideDrawerOpen: false })
   }
 
   render() {
@@ -25,6 +32,16 @@ class App extends Component {
         <Router>
           <div className="AppContainer">
             <Navbar drawerClickHandler={this.drawerToggler} />
+            <SidePane 
+              show={this.state.sideDrawerOpen}
+              click={this.closePaneHandler}
+            />
+            {this.state.sideDrawerOpen ? (
+              <Overlay click={this.closePaneHandler}/>
+              ) :
+              null
+            }
+
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/docs" component={Docs} />

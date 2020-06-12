@@ -11,6 +11,9 @@ const About = () => {
             <a href="https://github.com/pswartz66/JSInterviewQuestionsAPI" className="githubLink">
                 Source Code     
             </a>
+            <div className="aboutTag">
+                Created by Phil Swartz
+            </div>
 
         </div>
     )

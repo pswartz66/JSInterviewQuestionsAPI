@@ -10,7 +10,6 @@ const NavigationLinks = () => {
             <Link className="underbarLink" to="/endpoints">Endpoints</Link>
             <Link className="underbarLink" to="/about">About</Link>
             <Link className="underbarLink" to="/submit">Submit</Link>
-
         </ul>
     )
 }

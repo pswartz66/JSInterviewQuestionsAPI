@@ -5,12 +5,12 @@
     align-items: center;
     margin-top: 58px;
     padding: 12px;
-    background-color: rgb(203, 215, 235);
+    /* background-color: rgb(203, 215, 235); */
     height: 400px;
 }
 .aboutBody {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: calc(14px + 2vw);
 }
 
@@ -19,4 +19,9 @@ a.githubLink {
     font-size: calc(14px + 2vw);
     text-decoration: none;
     color: rgb(0, 12, 187);
+}
+
+.aboutTag {
+    padding: 20px;
+    font-size: calc(12px + 1vw);
 }
