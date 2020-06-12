@@ -8,12 +8,10 @@ const Navbar = (props) => {
 
     return (
         <header className="Navbar">
-
             <nav className="Navigation">
                 <div className="navButton">
                     <DrawerButton click={props.drawerClickHandler} />
                 </div>
-                
                 <img src={JSLogo} alt='jslogo' />
                 <div className="navTitle">
                     InterviewAPI

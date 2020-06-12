@@ -1,38 +1,35 @@
 import React from 'react';
-import NavigationLinks from '../NavigationLinks';
 import { Link } from 'react-router-dom';
+import './style.css';
+import JSLogo from '../../../assets/img/jslogo.png';
 
 const SidePane = (props) => {
 
     // this is our standard sidePane css class
-    let cssSidePane = "sidePane";
-    let newcssSidePane = "";
+    let cssSidePane = ["sidePane"];
     if (props.show) {
         // if prop passed down as show is true
         // modify cssSidePane to sidePane.open to get the open css effect
         cssSidePane = ["sidePane", "open"];
-        newcssSidePane = cssSidePane.join(' ');
-        return (
-            // dynamic className here
-            <nav className={newcssSidePane}>
-                <ul className="sideNavItems">
-                    {/* <NavigationLinks /> */}
-                    <Link className="underbarLink" to="/docs">Docs</Link>
-                    <Link className="underbarLink" to="/endpoints">Endpoints</Link>
-                    <Link className="underbarLink" to="/about">About</Link>
-                    <Link className="underbarLink" to="/submit">Submit</Link>
-                </ul>
-            </nav>
-        )
-    } else {
-        return (
-            <div></div>
-        )
     }
 
-    
-
-  
+    return (
+        // dynamic className here
+        <nav className={cssSidePane.join(" ")}>
+            <div className="sidePaneContainer">
+                <img src={JSLogo} alt='jslogoSide' />
+                <div className="navTitleSide">
+                    InterviewAPI
+                </div>
+                <ul className="sideNavItems">
+                    <Link onClick={props.click} className="underbarLinkSide" to="/docs">Docs</Link>
+                    <Link onClick={props.click} className="underbarLinkSide" to="/endpoints">Endpoints</Link>
+                    <Link onClick={props.click} className="underbarLinkSide" to="/about">About</Link>
+                    <Link onClick={props.click} className="underbarLinkSide" to="/submit">Submit</Link>
+                </ul>
+            </div>
+        </nav>
+    )
 }
 
 export default SidePane;

@@ -1,12 +1,12 @@
 .Navbar {
     position: absolute;
     width: 100%;
-    top: 0px;
+    top: 0;
+    left: 0;
     height: 58px;
     background-color: rgb(159, 183, 218);
     box-shadow: 2px 2px 5px rgb(80, 80, 80);
 }
-
 .Navigation {
     display: flex;
     align-items: center;

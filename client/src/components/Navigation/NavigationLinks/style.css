@@ -28,10 +28,6 @@ a.underbarLink:hover:before {
     visibility: visible;
     width: 100%;
 }
-/* a.underbarLink:hover {
-    font-weight: 500;
-} */
-
 @media (max-width: 768px) {
     .NavLinks {
         display: none;

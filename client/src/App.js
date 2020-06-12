@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Docs from './components/Docs';
 import Endpoints from './components/Endpoints';
@@ -29,7 +29,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
           <div className="AppContainer">
             <Navbar drawerClickHandler={this.drawerToggler} />
             <SidePane 
@@ -50,7 +49,6 @@ class App extends Component {
               <Route exact path="/submit" component={Submit} />
             </Switch>
           </div>
-        </Router>
       </div>
     );
   }
