@@ -21,6 +21,7 @@ const SidePane = (props) => {
                 <div className="navTitleSide">
                     InterviewAPI
                 </div>
+                <div className="divider"/>
                 <ul className="sideNavItems">
                     <Link onClick={props.click} className="underbarLinkSide" to="/docs">Docs</Link>
                     <Link onClick={props.click} className="underbarLinkSide" to="/endpoints">Endpoints</Link>

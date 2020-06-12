@@ -4,8 +4,8 @@
   /* width: 100%; */
 }
 .AppContainer {
-  /* height: 100%; */
-  margin-top: 20px;
+  height: 100%;
+  /* padding: 20px; */
   /* background-color: rgb(125, 139, 161); */
   /* overflow: auto; */
 }

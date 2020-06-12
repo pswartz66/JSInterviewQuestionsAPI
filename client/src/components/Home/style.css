@@ -1,7 +1,15 @@
-
 .homeContainer {
-    margin: 5rem 2rem 2rem 2rem;
-    background: #d13838;
-    height: 100%;
-    position: relative;
-  }
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(206, 206, 206);
+}
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 80px 20px 20px 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}

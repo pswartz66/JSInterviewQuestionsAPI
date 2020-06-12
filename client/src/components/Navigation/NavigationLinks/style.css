@@ -9,7 +9,7 @@ a.underbarLink {
     position: relative;
     font-size: 20px;
     text-decoration: none;
-    color: rgb(50, 58, 80);
+    color: rgb(219, 242, 255);
     margin-left: 14px;
     margin-right: 2px;
 }
@@ -20,7 +20,7 @@ a.underbarLink:before {
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: rgb(32, 76, 87);
+    background-color: rgb(47, 166, 196);
     visibility: hidden;
     transition: all 0.25s ease-in-out;
 }
