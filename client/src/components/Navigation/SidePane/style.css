@@ -52,14 +52,15 @@ a.underbarLinkSide:hover:before {
     visibility: visible;
     width: 100%;
 }
-.navTitleSide {
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(162, 205, 230);
-    margin-top: 10px;
-    padding-bottom: 10px;
+.navTitleSide > a {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(162, 205, 230);
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
 }
 .divider {
     height: 1px;
