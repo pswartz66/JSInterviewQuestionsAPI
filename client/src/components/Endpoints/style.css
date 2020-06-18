@@ -12,6 +12,7 @@
     padding: 10px;
     background-color: grey;
     border-radius: 10px;
+    overflow: auto;
 }
 .endpointsTitle {
     font-size: 20px;
@@ -36,3 +37,14 @@ ul.epItem {
 ul.epItem:hover {
     color: rgb(118, 190, 231);
 }
+
+pre.epItemCode {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    /* width: 100%; */
+    max-height: 400px;
+    overflow-x: scroll;
+}
+
