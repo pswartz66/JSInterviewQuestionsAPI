@@ -19,7 +19,9 @@ const SidePane = (props) => {
             <div className="sidePaneContainer">
                 <img src={JSLogo} alt='jslogoSide' />
                 <div className="navTitleSide">
+                  <Link onClick={props.click} to="/">
                     InterviewAPI
+                  </Link>
                 </div>
                 <div className="divider"/>
                 <ul className="sideNavItems">
